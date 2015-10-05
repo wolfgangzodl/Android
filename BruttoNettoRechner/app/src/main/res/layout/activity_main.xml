@@ -29,5 +29,21 @@
             android:id="@+id/editText"
             android:layout_gravity="center_horizontal" />
 
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brutto"
+            android:id="@+id/Brutto"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Netto"
+            android:id="@+id/netto"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
+
     </LinearLayout>
 </RelativeLayout>
