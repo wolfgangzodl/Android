@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Eingabe des Betrags"
-            android:id="@+id/eingabe_text"
+            android:id="@+id/betrag_text"
             android:layout_gravity="center_horizontal" />
 
         <EditText
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:id="@+id/editText"
+            android:id="@+id/eingabe_betrag"
             android:layout_gravity="center_horizontal" />
 
         <RadioButton
@@ -44,6 +44,28 @@
             android:id="@+id/netto"
             android:layout_gravity="center_horizontal"
             android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eingabe des Prozentsatzes(0-100)"
+            android:id="@+id/prozent_text"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rechnen"
+            android:id="@+id/rechnen_button"
+            android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
 </RelativeLayout>
