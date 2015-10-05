@@ -11,7 +11,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,29 +28,26 @@
             android:ems="10"
             android:id="@+id/eingabe_betrag"
             android:layout_gravity="center_horizontal" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="0.03">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brutto"
+                android:id="@+id/Brutto"
+                android:layout_gravity="center_horizontal"
+                android:checked="false" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Brutto"
-            android:id="@+id/Brutto"
-            android:layout_gravity="center_horizontal"
-            android:checked="false" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Netto"
-            android:id="@+id/netto"
-            android:layout_gravity="center_horizontal"
-            android:checked="false" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Eingabe des Prozentsatzes(0-100)"
-            android:id="@+id/prozent_text"
-            android:layout_gravity="center_horizontal" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Netto"
+                android:id="@+id/netto"
+                android:layout_gravity="center_horizontal"
+                android:checked="false" />
+        </RadioGroup>
 
         <EditText
             android:layout_width="match_parent"
@@ -63,6 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rechnen"
+            android:onClick="changeActivity"
             android:id="@+id/rechnen_button"
             android:layout_gravity="center_horizontal" />
 
