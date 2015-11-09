@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NettoBruttoRechner</string>
+    <string name="action_settings">Settings</string>
+    <string name="input_number">Enter your value</string>
+    <string name="input_percent">Enter the tax percentage</string>
+    <string name="button_calculate">Calculate</string>
+
+    <string-array name="calc_method">
+        <item>Brutto to netto</item>
+        <item>Netto to brutto</item>
+    </string-array>
+</resources>
